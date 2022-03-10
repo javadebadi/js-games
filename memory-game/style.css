@@ -4,15 +4,33 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1 {
+body {
+    /* background-image: url('./images/animals-63920561.png'); */
+    /* background-size: 10000px; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.board {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 40px;
+    padding: 15px 10px;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 20px 20px;
+    display: inline-block;
+    border-radius: 15px;
 }
 
 .gird {
     display: grid;
     column-gap: 50px;
-    grid-template-columns:  auto auto auto;
+    grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 10px;
     margin: 0 auto;
@@ -22,7 +40,7 @@ h1 {
 
 
 .card-img {
-    width: 200px;
+    width: 150px;
     display: inline-block;
     padding: 5px;
     margin: 10px;
@@ -30,28 +48,30 @@ h1 {
     text-align: center;
     border: 5px solid rgba(0, 0, 0, 0.8);
     border-radius: 30px;
+    background-color: white;
     background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
 }
 
 .card-img-visible {
-    width: 200px;
+    width: 150px;
     display: inline-block;
     padding: 5px;
     margin: 10px;
     font-size: 30px;
     text-align: center;
+    background-color: white;
     border: 5px solid rgba(0, 0, 0, 0.8);
     border-radius: 30px;
 }
 
 
 .card-img img {
-    width: 200px;
+    width: 150px;
     visibility: hidden;
 }
 
-.card-img:hover  {
-    background-color:#000;
-    opacity:0.5;
-    border-radius:30px;
+.card-img:hover {
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 30px;
 }
